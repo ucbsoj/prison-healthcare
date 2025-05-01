@@ -1,0 +1,69 @@
+@import url("../fonts/fonts.css");
+
+/** Addtional fonts go here: https://gwfh.mranftl.com/fonts **/
+
+html,body{
+	font-family: Lato, 'Helvetica Neue', Arial, sans-serif;
+}
+
+h1,h2,h3,h4,h5{
+	font-family: 'Crimson Text', Georgia, 'Times New Roman', serif;
+}
+
+
+.background-image-changer{
+  transition: background 0.3s ease-out;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+/** expand utlities/sizing to include 25 and 50 **/
+.vw-25 { width: 25vw !important; }
+.vh-25 { height: 25vh !important; }
+.vw-50 { width: 50vw !important; }
+.vh-50 { height: 50vh !important; }
+
+
+/** clearfix for position:sticky **/
+.sticky:before,
+.sticky:after {
+    content: '';
+    display: table;
+}
+
+
+/** Looping Background Video **/
+
+.looping-background-video{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.6); 	/* shade over video for foreground-background separation */
+	color: #fff; 						/* make text color white */
+}
+
+.looping-background-video video{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: auto;
+	height: 100vh;
+	z-index: -100;
+	@media (min-aspect-ratio:16/9){
+		width: 100vw;
+		height: auto;
+	}
+}
+
+
+/** Sticky for scrollytelling layout **/
+[data-sticky-graphic] {
+	top: 35%;
+}
