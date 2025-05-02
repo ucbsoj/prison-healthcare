@@ -8,44 +8,114 @@
 
     <title>Multimedia Project</title>
 
-    <!-- Microdata Scema: Fill this out for SEO purposes -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "NewsArticle",
-      "headline": "",
-      "image": [
-        "",
-        ""
-      ],
-      "author": "",
-      "publisher": "",
-      "datePublished": "2020-04-28T12:00:00",
-      "url": "",
-      "sameAs" : [ 
-        "",
-        "",
-        ""
-      ]
-    }
-    </script>
+    <style>
+
+      .background-image-changer{
+
+        background-size: 90%;
+        background-repeat: no-repeat;
+        
+      }
+    </style>
+
+
 
   </head>
   <body>
 
 
     <!-- main banner -->
-    <header role="banner" class="looping-background-video d-flex flex-column align-items-center justify-content-center">
+    <!-- <header role="banner" class="looping-background-video d-flex flex-column align-items-center justify-content-center">
 
       <h1 class="text-white text-center display-1">Prison Heathcare</h1>
       <p class="text-white">Something something</p>
 
-      <video muted playsinline autoplay loop>
-        <source src="https://temp-j100.s3.amazonaws.com/aidindying-background.mp4" type="video/mp4">
-        <img src="" alt="fallback">
-      </video>
 
-    </header>
+    </header> -->
+
+
+      <!-- EXAMPLE OF A BACKGROUND SCROLLER -->
+
+      <!-- instructions: Change background image in .background-image-changer first. Then, copy and paste any additional blocks of text. Then change images on the data-step="" attributes of each block. -->
+
+      <div class="scrolly position-relative w-100">
+
+        <!--this holds background image-->
+        <div style="background-image:url(assets/ONE-normal.jpg)" class="background-image-changer sticky-top w-100 left-0 z-n1"></div>
+
+        <!-- justified left-->
+        <div class="step container-fluid d-flex">
+          <div class="row align-items-center">
+            <div data-step="assets/TWO-vsp.jpg" class="text-box col-10 offset-1 col-sm-5 offset-sm-1 bg-body-secondary p-4">
+              <p class="p-0 m-0">A news organization's budget inevitably reflects decision-making about what news to cover, for what audience, and in what depth.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- justified center -->
+        <div class="step container-fluid d-flex">
+          <div class="row align-items-center">
+            <div data-step="assets/THREE-mcsp.jpg" class="text-box col-10 offset-1 col-sm-6 offset-sm-3 bg-body-secondary p-4">
+              <p class="p-0 m-0">A news organization's budget inevitably reflects decision-making about what news to cover, for what audience, and in what depth.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="step container-fluid d-flex">
+          <div class="row align-items-center">
+            <div data-step="assets/FOUR-ccwp.jpg" class="text-box col-10 offset-1 col-sm-5 offset-sm-6 bg-body-secondary p-4">
+              <p class="p-0 m-0">A news organization's budget inevitably reflects decision-making about what news to cover, for what audience, and in what depth.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="step container-fluid d-flex">
+          <div class="row align-items-center">
+            <div data-step="assets/FIVE-sol.jpg" class="text-box col-10 offset-1 col-sm-5 offset-sm-6 bg-body-secondary p-4">
+              <p class="p-0 m-0">A news organization's budget inevitably reflects decision-making about what news to cover, for what audience, and in what depth.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="step container-fluid d-flex">
+          <div class="row align-items-center">
+            <div data-step="assets/SIX-sqrc.jpg" class="text-box col-10 offset-1 col-sm-5 offset-sm-6 bg-body-secondary p-4">
+              <p class="p-0 m-0">A news organization's budget inevitably reflects decision-making about what news to cover, for what audience, and in what depth.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="step container-fluid d-flex">
+          <div class="row align-items-center">
+            <div data-step="assets/SEVEN-cci.jpg" class="text-box col-10 offset-1 col-sm-5 offset-sm-6 bg-body-secondary p-4">
+              <p class="p-0 m-0">A news organization's budget inevitably reflects decision-making about what news to cover, for what audience, and in what depth.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="step container-fluid d-flex">
+          <div class="row align-items-center">
+            <div data-step="assets/EIGHT-all-dark.jpg" class="text-box col-10 offset-1 col-sm-5 offset-sm-6 bg-body-secondary p-4">
+              <p class="p-0 m-0">A news organization's budget inevitably reflects decision-making about what news to cover, for what audience, and in what depth.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="step container-fluid d-flex">
+          <div class="row align-items-center">
+            <div data-step="assets/NINE-normal.jpg" class="text-box col-10 offset-1 col-sm-5 offset-sm-6 bg-body-secondary p-4">
+              <p class="p-0 m-0">A news organization's budget inevitably reflects decision-making about what news to cover, for what audience, and in what depth.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- optional empty step to see last image 
+        <div class="step container-fluid d-flex"></div>
+        -->
+
+      </div>
+      <!-- END BACKGROUND SCROLLER -->
 
 
 
@@ -57,7 +127,7 @@
         <!-- article header -->
         <header class="my-5 row justify-content-center">
           <div class="col-12 col-md-10 text-center">
-            <h2>Governments have widely varying policies and practices towards journalists</h2>
+            <h1 class="display-1"><strong>Prison Healthcare</strong></h1>
             <p class="small pt-5">By Name Here</p>
           </div>
         </header>
@@ -77,13 +147,7 @@
             <p>Governments have widely varying policies and practices towards journalists, which control what they can research and write, and what press organizations can publish. Some governments guarantee the freedom of the press; while other nations severely restrict what journalists can research or publish.</p>
 
             
-            
-            <!-- EXAMPLE OF SINGLE IMAGE -->
-            <figure class="figure">
-              <img src="assets/example-media/random_1280.jpg" alt="Person reading a newspaper" class="img-fluid d-block">
-              <figcaption class="figure-caption">Here is a caption for this image</figcaption>
-            </figure>
-            
+    
 
 
             <p>Journalists in many nations have some privileges that members of the general public do not, including better access to public events, crime scenes and press conferences, and to extended interviews with public officials, celebrities and others in the public eye.</p>
@@ -92,29 +156,17 @@
           </div>
         </div>
             
-            
-        <!-- EXAMPLE OF TWO SIDE-BY-SIDE IMAGES -->
-        <div class="row justify-content-center">
-          <div class="col-11 col-sm-6">
-            <figure class="figure">
-              <img src="assets/example-media/random2_1280.jpg" alt="Person reading a newspaper" class="img-fluid d-block">
-              <figcaption class="figure-caption">Here is a caption for this image</figcaption>
-            </figure>
-          </div>
-          <div class="col-11 col-sm-6">
-            <figure class="figure">
-              <img src="assets/example-media/reading_1280.jpg" alt="Person reading a newspaper" class="img-fluid d-block">
-              <figcaption class="figure-caption">Here is a caption for this image</figcaption>
-            </figure>
-          </div>
-        </div>
 
 
          <!-- EXAMPLE OF STANDING WITH JAW -->
-         <figure class="figure">
-          <video src="assets/standing-w-jaw.mp4" class="img-fluid" autoplay muted loop></video>
-          <figcaption class="figure-caption small">Here is a caption for this image</figcaption>
-        </figure>
+         <div class="row justify-content-center">
+          <div class="col-12 col-sm-8 col-xl-4 col-xxl-4">
+            <figure class="figure">
+              <video src="assets/standing-w-jaw.mp4" class="img-fluid" autoplay muted loop></video>
+              <figcaption class="figure-caption small" style="font-size: 0.7rem;">Illustration by Nathan Blalock, animated by Denis Akbari</figcaption>
+            </figure>
+          </div>
+        </div>
 
 
         <div class="row justify-content-center">
@@ -130,10 +182,14 @@
 
         
         <!-- EXAMPLE OF ONE LAYING WITH JAW -->
-        <figure class="figure">
-          <video src="assets/laying-w-jaw.mp4" class="img-fluid" autoplay muted loop></video>
-          <figcaption class="figure-caption small">Here is a caption for this image</figcaption>
-        </figure>
+        <div class="row justify-content-center my-5">
+          <div class="col-12 col-sm-10">
+            <figure class="figure">
+              <video src="assets/laying-w-jaw.mp4" class="img-fluid" autoplay muted loop></video>
+              <figcaption class="figure-caption small"  style="font-size: 0.7rem;">Here is a caption for this image</figcaption>
+            </figure>
+          </div>
+        </div>
         
 
 
@@ -155,10 +211,17 @@
 
 
           <!-- EXAMPLE OF WOMAN -->
-          <figure class="figure">
-            <video src="assets/woman.mp4" class="img-fluid" autoplay muted loop></video>
-            <figcaption class="figure-caption small">Here is a caption for this image</figcaption>
-          </figure>
+          <div class="row justify-content-center my-5">
+            <div class="col-12 col-sm-8 col-xl-4 col-xxl-4">
+              <figure class="figure">
+                <video src="assets/woman.mp4" class="img-fluid" autoplay muted loop></video>
+                <figcaption class="figure-caption small" style="font-size: 0.7rem;">Illustration by XXXXXXX, animated by Denis Akbari</figcaption>
+              </figure>
+            </div>
+          </div>
+
+
+
         <h2 class="text-center my-5">Example of a Photo Carousel</h2>
         
         <!-- EXAMPLE OF A PHOTO CAROUSEL -->
@@ -226,21 +289,33 @@
         </div>
         
           <!-- EXAMPLE OF SITTING -->
-          <figure class="figure">
-            <video src="assets/man-sitting-w-paper.mp4" class="img-fluid" autoplay muted loop></video>
-            <figcaption class="figure-caption small">Here is a caption for this image</figcaption>
-          </figure>
+        <div class="row justify-content-center my-5">
+          <div class="col-12 col-sm-8 col-xl-4 col-xxl-4">   
+            <figure class="figure">
+              <video src="assets/man-sitting-w-paper.mp4" class="img-fluid" autoplay muted loop></video>
+              <figcaption class="figure-caption small">Here is a caption for this image</figcaption>
+            </figure>
+          </div>
+        </div>
         
         
-        <!-- EXAMPLE OF A MODAL -->
+        <!-- EXAMPLE OF A MODAL (POP-UP) -->
         
-        <!-- Button to trigger the modal -->
-        <button type="button" class="btn btn-primary mx-auto d-block" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          Launch demo pop-up (also called a modal)
-        </button>
+        <!-- Link to trigger the popup 1 -->
+        <a href="#" data-bs-toggle="modal" data-bs-target="#popup1">
+          Launch demo pop-up 1 (also called a modal)
+        </a>
 
-        <!-- Modal content, which is hidden until activated. -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <br><br><!-- spacer -->
+
+        <!-- Link to trigger the popup 2 -->
+        <a href="#" data-bs-toggle="modal" data-bs-target="#popup2">
+          Launch demo pop-up 2 (also called a modal)
+        </a>
+
+
+        <!-- POPUP 1 content, which is hidden until activated. -->
+        <div class="modal fade" id="popup1" tabindex="-1" aria-labelledby="popup1label" aria-hidden="true">
           <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-body">
@@ -253,6 +328,22 @@
             </div>
           </div>
         </div>
+
+        <!-- POPUP 2 content, which is hidden until activated. -->
+        <div class="modal fade" id="popup2" tabindex="-1" aria-labelledby="popup2label" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button type="button" class="ms-auto mb-3 d-block btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <!-- POPUP CONTENT GOES HERE -->
+                <p>Here is some text. The above can also be a video, an interactive embed, or other similar media type. The button to trigger this pop-up can be in the form of a link, an image, or any other clickable element on the page.</p>
+                <!-- END POPU UP CONTENT -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+
         
         <!-- END POPUP MODAL -->
         
@@ -281,88 +372,7 @@
       
       
         
-      <!-- EXAMPLE OF A BACKGROUND SCROLLER -->
 
-      <!-- instructions: Change background image in .background-image-changer first. Then, copy and paste any additional blocks of text. Then change images on the data-step="" attributes of each block. -->
-
-      <div class="scrolly position-relative w-100">
-
-        <!--this holds background image-->
-        <div style="background-image:url(assets/ONE-normal.jpg)" class="background-image-changer sticky-top w-100 left-0 z-n1"></div>
-
-
-        <div class="step container-fluid d-flex">
-          <div class="row align-items-center">
-            <div data-step="assets/TWO-vsp.jpg" class="text-box col-10 offset-1 col-sm-5 offset-sm-1 bg-body-secondary p-4">
-              <p class="p-0 m-0">A news organization's budget inevitably reflects decision-making about what news to cover, for what audience, and in what depth.</p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="step container-fluid d-flex">
-          <div class="row align-items-center">
-            <div data-step="assets/THREE-mcsp.jpg" class="text-box col-10 offset-1 col-sm-6 offset-sm-3 bg-body-secondary p-4">
-              <p class="p-0 m-0">A news organization's budget inevitably reflects decision-making about what news to cover, for what audience, and in what depth.</p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="step container-fluid d-flex">
-          <div class="row align-items-center">
-            <div data-step="assets/FOUR-ccwp.jpg" class="text-box col-10 offset-1 col-sm-5 offset-sm-6 bg-body-secondary p-4">
-              <p class="p-0 m-0">A news organization's budget inevitably reflects decision-making about what news to cover, for what audience, and in what depth.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="step container-fluid d-flex">
-          <div class="row align-items-center">
-            <div data-step="assets/FIVE-sol.jpg" class="text-box col-10 offset-1 col-sm-5 offset-sm-6 bg-body-secondary p-4">
-              <p class="p-0 m-0">A news organization's budget inevitably reflects decision-making about what news to cover, for what audience, and in what depth.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="step container-fluid d-flex">
-          <div class="row align-items-center">
-            <div data-step="assets/SIX-sqrc.jpg" class="text-box col-10 offset-1 col-sm-5 offset-sm-6 bg-body-secondary p-4">
-              <p class="p-0 m-0">A news organization's budget inevitably reflects decision-making about what news to cover, for what audience, and in what depth.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="step container-fluid d-flex">
-          <div class="row align-items-center">
-            <div data-step="assets/SEVEN-cci-.jpg" class="text-box col-10 offset-1 col-sm-5 offset-sm-6 bg-body-secondary p-4">
-              <p class="p-0 m-0">A news organization's budget inevitably reflects decision-making about what news to cover, for what audience, and in what depth.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="step container-fluid d-flex">
-          <div class="row align-items-center">
-            <div data-step="assets/EIGHT-all-dark.jpg" class="text-box col-10 offset-1 col-sm-5 offset-sm-6 bg-body-secondary p-4">
-              <p class="p-0 m-0">A news organization's budget inevitably reflects decision-making about what news to cover, for what audience, and in what depth.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="step container-fluid d-flex">
-          <div class="row align-items-center">
-            <div data-step="assets/NINE-normal.jpg" class="text-box col-10 offset-1 col-sm-5 offset-sm-6 bg-body-secondary p-4">
-              <p class="p-0 m-0">A news organization's budget inevitably reflects decision-making about what news to cover, for what audience, and in what depth.</p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- optional empty step to see last image 
-        <div class="step container-fluid d-flex"></div>
-        -->
-
-      </div>
-      <!-- END BACKGROUND SCROLLER -->
         
       
       <div class="container mt-5">
@@ -390,41 +400,7 @@
       
       
       
-      <div class="scrolly-video position-relative w-100">
-        
-        <div class="sticky-top w-100 left-0 z-n1 background-video-stepper vh-100">
-          <video preload width="100%" height="auto" class="position-absolute top-50 start-50 align-content-center translate-middle">
-            <source src="assets/example-media/animation.mp4" type="video/mp4">
-          </video>
-        </div>
-        
-        <div class="step container-fluid d-flex">
-          <div class="row align-items-center">
-            <div class="col-10 offset-1 col-sm-5 offset-sm-1 bg-body-secondary p-4">
-              <p class="p-0 m-0">A news organization's budget inevitably reflects decision-making about what news to cover, for what audience, and in what depth.</p>
-            </div>
-          </div>
-        </div>
 
-
-        <div class="step container-fluid d-flex">
-          <div class="row align-items-center">
-            <div class="col-10 offset-1 col-sm-6 offset-sm-3 bg-body-secondary p-4">
-              <p class="p-0 m-0">A news organization's budget inevitably reflects decision-making about what news to cover, for what audience, and in what depth.</p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="step container-fluid d-flex">
-          <div class="row align-items-center">
-            <div class="col-10 offset-1 col-sm-5 offset-sm-6 bg-body-secondary p-4">
-              <p class="p-0 m-0">A news organization's budget inevitably reflects decision-making about what news to cover, for what audience, and in what depth.</p>
-            </div>
-          </div>
-        </div>
-        
-      </div>
       
       
       
