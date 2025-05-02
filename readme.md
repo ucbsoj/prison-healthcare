@@ -1,6 +1,5 @@
-### J222 Multimedia Starter Template
+### Prison Healthcare
 
-
-This is a basic template that has examples of bootstrap carousel, scrollama stepper, and step through a video on scroll. 
+Project by Denis Akbari
 
 Example: [https://ucbsoj.github.io/prison-healthcare](https://ucbsoj.github.io/prison-healthcare)
